@@ -8,6 +8,8 @@ import { MOVIES } from '../datas/data_movies';
   styleUrls: ['./movie-list.component.css']
 })
 export class MovieListComponent implements OnInit {
+  listName: string;
+  movies: Movie[];
   /*
   movies = Movie[
     new Movie(
@@ -23,8 +25,9 @@ export class MovieListComponent implements OnInit {
   ]; // */
 
   constructor() {
+    this.listName = "une liste";
     //*
-    var movies = [
+    this.movies = [
       new Movie(
         'Full Metal Alchemist',
         'Desc for Full Metal Alchemist',

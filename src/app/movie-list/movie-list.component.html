@@ -1,1 +1,9 @@
 <p>movie-list works!</p>
+<h3>{{ listName }}</h3>
+{{ movies[0].title }}
+<!--
+*ngFor="let element of movies;"
+  {{ element.title }}
+-->
+<app-movie-card [movieTitle]='moviecardtitle'></app-movie-card>
+<!--app-movie-card [movieTitle]="{{ movies[0].title }}">{{ movies[0].title }}</app-movie-card-->
