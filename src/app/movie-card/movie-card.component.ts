@@ -7,13 +7,13 @@ import { Movie } from '../models/movie';
   styleUrls: ['./movie-card.component.css']
 })
 export class MovieCardComponent implements OnInit {
-  movie: Movie;
+  //movie: Movie;
   movieTitle: string;
   movieDesc: string;
   movieImg: string;
 
   constructor() {
-    this.movie = new Movie();
+    //this.movie = new Movie();
     this.movieTitle = "titre par defaut";
     this.movieDesc = "";
     this.movieImg = "";
